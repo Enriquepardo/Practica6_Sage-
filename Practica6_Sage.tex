@@ -1,0 +1,38 @@
+
+\documentclass{article}
+\usepackage{listings}
+
+\begin{document}
+
+\begin{lstlisting}[language=Python]
+import random
+numeros = []
+for i in range(1000):
+  intervalo = random.randint(-100, 100)
+  numeros.append(intervalo)
+
+mean = sum(numeros) / len(numeros)
+print(mean)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python]
+alturas = [71, 73, 59, 62, 65, 61, 73, 61]
+alturas.sort()
+print('Media:' , mean(alturas))
+print('Mediana:', median(alturas))
+print('Moda:', mode(alturas))
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python]
+alturas = [71, 73, 59, 62, 65, 61, 73, 61]
+print('Desviación típica:', std(alturas))
+print('Varianza:',variance(alturas))
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python]
+alturas = [71, 73, 59, 62, 65, 61, 73, 61]
+range = max(alturas) - min(alturas)
+range
+\end{lstlisting}
+
+\end{document}
